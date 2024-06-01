@@ -4,7 +4,7 @@ The FiiO K3 has an auto power-off "feature" or low power mode which disables it 
 It will make an audible click every time a new sound is played, like a notification.
 The sound gets cut off because of the startup delay which can be annoying.
 
-This workaround fixes the auto power off "feature" by constantly playing null audio via `ffplay`. You will need ffmpeg installed.
+This workaround fixes the auto power off "feature" by constantly playing null audio via `ffplay`. You will need `ffmpeg` installed.
 
 
 ## How it works
