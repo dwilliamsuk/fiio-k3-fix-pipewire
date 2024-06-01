@@ -6,6 +6,8 @@ The sound gets cut off because of the startup delay which can be annoying.
 
 This workaround fixes the auto power off "feature" by constantly playing null audio via `ffplay`. You will need `ffmpeg` installed.
 
+All credit to [Richard Kuhnt](https://github.com/r15ch13) for making these scripts. Very little adaptation was required from myself to get this
+working with pipewire.
 
 ## How it works
 
