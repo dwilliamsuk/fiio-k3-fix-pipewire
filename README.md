@@ -1,16 +1,16 @@
-# Fix for FiiO K3 auto power-off on Arch Linux
+# Fix for FiiO K3 auto power-off on Systemd Distros
 
 The FiiO K3 has an auto power-off "feature" or low power mode which disables it when there is no audio signal keeping it alive.
 It will make an audible click every time a new sound is played, like a notification.
 The sound gets cut off because of the startup delay which can be annoying.
 
-This workaround fixes the auto power off "feature" by constantly playing null audio via `ffplay`.
+This workaround fixes the auto power off "feature" by constantly playing null audio via `ffplay`. You will need ffmpeg installed.
 
 
 ## How it works
 
 1. The udev rule triggers if the FiiO K3 is added/removed from the system and executes the script `fiio-k3-fix`.
-2. The script will try to get the current user running `pulseaudio` and start or stop the service accordingly.
+2. The script will try to get the current user running `pipewire` and start or stop the service accordingly.
 3. The service runs `ffplay` to constantly play null audio which keeps the FiiO K3 alive.
 
 ## Install
