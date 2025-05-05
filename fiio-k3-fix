@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-PIPEWIRE_USER=$(ps -o user= -p `pidof pipewire`)
+PIPEWIRE_USER=$(ps -o user= -p `pidof pipewire -s`)
 
 if [[ -n $PIPEWIRE_USER && -n $ACTION ]]; then
     if [ $ACTION == "add" ]; then
